@@ -1,0 +1,1029 @@
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#323232 ;
+}
+body{
+*margin: 0;
+   padding: 0;
+   background-color: #323232;
+}
+
+.titulo{
+    background-color: #d7d7d7;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: -8px;
+    margin-right: -8px;
+    position: absolute;
+    bottom: 74%;
+    
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 20000;
+    background-color: black;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 15px;
+    height: 80px;
+    padding: 0;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+
+}
+
+
+.lista__Menu{
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 20px;
+    margin-right: 20px;
+}
+
+.links{
+    color: #d7d7d7;
+    text-decoration: none;
+    font-size: 22px;
+      
+}
+
+.logo{
+    margin: 10px 10px 10px 35px;
+    width: 80px;
+}
+
+main{
+    height: 600px;
+
+}
+
+.texto{
+    display: inline-block;
+    margin-left: 2%;
+    margin-bottom: -5%;
+    margin-top: 5%;
+    color: #0b0b0b;
+    padding: 15px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.texto__Parrafo{
+    display: flex;
+    flex-direction: column;
+    padding: ;
+    justify-content: left;
+    font-size: 20px;
+    color: #d7d7d7
+    
+    
+}
+
+.div1 p{
+    width: 55%;
+    margin-left: 10px;
+    padding-top: 15px;
+}
+
+.div2 img{
+    transform: translate(0%,8%);
+    width: 55%;
+    padding-top: 10px;
+    margin-left: 1opx;
+   
+}
+.div2 p{
+    width: 60%;
+    padding-top: 17px;
+}
+
+
+
+.texto2{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: right;
+    font-size: 20px;
+    color: #d7d7d7
+    
+    
+}
+.div3{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    height: auto;
+    width: 40%;
+    transform: translate(145%, -900px);
+    border: inherit;
+    margin-top: 40px;
+}
+
+.div4 p{
+    transform: translate(145%, -905px);
+    width: 40%;
+    text-align: center;
+}
+.div4:hover{
+    font-size: 16px;
+   color: #d7d7d7;
+}
+
+a:hover{
+    text-decoration: #d7d7d7;
+    color: #35392d;
+}
+
+
+/*footers*/
+
+
+.listasfooter{
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    left: 15%;
+}
+
+
+.footerinicio{
+    padding: 20px 100px;
+    background-color:black;
+    margin-top: 700px;
+    height: 80px;
+    margin-bottom: 100px;
+
+    
+}
+
+.footercontacto{
+    padding: 20px 100px;
+    background-color:black;
+    margin-top: 700px;
+    height: 80px;
+    margin-bottom: 100px;
+}
+
+.footerblog{
+    padding: 20px 100px;
+    background-color:black;
+    margin-top: 700px;
+    height: 80px;
+    margin-bottom: 100px;
+}
+
+.footergaleria{
+    padding: 20px 100px;
+    background-color:black;
+    margin-top: 700px;
+    height: 80px;
+    margin-bottom: 100px;
+}
+
+.footerequipo{
+    padding: 20px 100px;
+    background-color:black;
+    margin-top: 700px;
+    height: 80px;
+    margin-bottom: 100px;
+}
+.footerinicio p{
+    transform: translate(100px, -20px);
+    font-size: large;
+    width: 100%;
+    color: #d7d7d7;
+
+}
+.footerblog p{
+    transform: translate(100px, -20px);
+    font-size: large;
+    width: 100%;
+    color: #d7d7d7;
+
+}
+.footercontacto p{
+    transform: translate(100px, -20px);
+    font-size: large;
+    width: 100%;
+    color: #d7d7d7;
+
+}
+.footerequipo p{
+    transform: translate(100px, -20px);
+    font-size: large;
+    width: 100%;
+    color: #d7d7d7;
+    
+}
+.footergaleria p{
+    transform: translate(100px, -20px);
+    font-size: large;
+    width: 100%;
+    color: #d7d7d7;
+}
+.footerinicio a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #d7d7d7;
+    font-size: medium;
+    transform: translate(500%, 10%);
+
+}
+.footercontacto a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #d7d7d7;
+    font-size: medium;
+    transform: translate(500%, 10%);
+}
+.footerequipo a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #d7d7d7;
+    font-size: medium;
+    transform: translate(500%, 10%); 
+}
+.footerblog a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #d7d7d7;
+    font-size: medium;
+    transform: translate(500%, 10%);
+}
+.footergaleria a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #d7d7d7;
+    font-size: medium;
+    transform: translate(500%, 10%);
+}
+a:hover{
+    text-decoration: #d7d7d7;
+    color: #35392d;
+}
+/*nuestro equipo*/
+
+.container { 
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sonyalpha sonyalphalink"
+      "lentesony50 lentesony50link"
+      "lentesony14 lentesony14link"
+      "lentecanon200 lentecanon200link"
+      ". .";
+  }
+  
+  .sonyalpha { grid-area: sonyalpha; }
+  
+  .sonyalphalink { grid-area: sonyalphalink; }
+  
+  .lentesony50 { grid-area: lentesony50; }
+  
+  .lentesony50link { grid-area: lentesony50link; }
+  
+  .lentesony14 { grid-area: lentesony14; }
+
+  .lentesony14link { grid-area: lentesony14link; }
+
+  .lentecanon200 { grid-area: lentecanon200; }
+
+  .lentecanon200link { grid-area: lentecanon200link; } 
+
+.alphaimg{
+    width: 100%;
+    height: 450px;
+}
+
+.sonyalphalink h1{
+    text-align: center;
+    margin-top: 50px;
+    color: #0b0b0b;
+
+}
+.sonyalphalink p {
+    color: #d7d7d7;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.sonyalphalink p a{
+    color: #d7d7d7;
+    font-size: 18px;
+}
+
+.lentesony50link h1{
+    text-align: center;
+    color: #0b0b0b;
+    margin-top: 70px;
+}
+.lentesony50link p{
+    text-align: center;
+    color: #d7d7d7;
+    font-size: 18px;
+    width: 100%;
+}
+.lentesony50link p a{
+    color: #d7d7d7;
+    font-size: 18px;
+}
+
+.lentesony50img{
+    height: 450px;
+    width: 100%;
+}
+
+.lente14img{
+    width: 100%;
+    height: 450px;
+}
+
+.lentesony14link h1{
+    text-align: center;
+    color: #0b0b0b;
+    margin-top: 70px;
+}
+
+.lentesony14link p{
+    text-align: center;
+    color: #d7d7d7;
+    font-size: 18px;
+    width: 100%;
+}
+
+.lentesony14link a{
+    color: #d7d7d7;
+    font-size: 18px;
+}
+
+.lente200img{
+    width: 100%;
+    height: 450px;
+}
+
+.lentecanon200link h1{
+    text-align: center;
+    color: #0b0b0b;
+    margin-top: 70px;
+}
+
+.lentecanon200link p{
+    text-align: center;
+    color: #d7d7d7;
+    font-size: 18px;
+    width: 100%;
+}
+
+.lentecanon200link a{
+    color: #d7d7d7;
+    font-size: 18px;
+}
+
+
+
+
+
+/*contacto*/
+
+
+
+.imgprincipal2{
+    width: 90%;
+    height: 85%;
+    padding: 70px;
+        
+}
+
+.contacto{
+    width: 55%;
+    height: 33%;
+    transform: translateX(30%);
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid black;
+}
+.contacto p{
+    text-align: center;
+    font-size: 22px;
+    color: #d7d7d7;
+    width: 55%;
+    margin-left: 18px;
+}
+
+.contacto__Logo{
+    position: relative;
+    left: 76%;
+    bottom: 50%;
+    width: 60px;
+}
+
+/*blog*/
+
+.blog{
+    border: solid #d7d7d7 5px;
+    height: 900px;
+    background-image:url(../imagenes/IMG-20220315-WA0015.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px
+        
+}
+
+.blog__Titulo{
+    text-align: left;
+    padding-top: 60px;
+    padding-left: 35%;
+    color: #161616;
+    padding-bottom: 50px;
+    
+}
+.blog__Parrafo{
+    display: inline-block;
+    width: 40%;
+    padding-left: 60px;
+    color: #d7d7d7;
+    font-size: 20px;
+    text-align: center;
+    opacity: 80%;
+}
+.blog__Parrafo2{
+    display: inline-block;
+    width: 50%;
+    padding-left: 100px;
+    color: #d7d7d7;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 100px;
+    opacity: 80%;
+    
+  
+}
+.blog__Parrafo3{
+    display: inline-block;
+    width: 60%;
+    padding-left: 250px;
+    color: #d7d7d7;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 150px;
+    opacity: 80%;
+}
+
+/*galeria*/
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .grid-item:hover {
+    filter: opacity(0.9);
+    
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+    padding-top: 60px;
+  }
+  
+  @media (min-width: 600px) {
+    .ancho {
+      grid-column: span 2;
+    }
+  
+    .alto {
+      grid-row: span 2;
+    }
+    .masancho{
+        grid-column: span 3;
+    }
+    .masalto{
+        grid-row: span 3;
+    }
+  }
+
+
+
+@media screen and (max-width: 880px) { 
+    .lista__Menu{
+        margin-right: 10px;
+    }
+    .links{
+        font-size: 15px;
+    }
+    .texto__Parrafo p{
+        width: 60%;
+    }
+    .texto{
+        width: 90%;
+
+    }
+    .div1 p{
+        width: 100%;
+        text-align: center;
+        padding-bottom: -15px;
+        transform: translateX(-10px);
+        
+    }
+    .div2 img{
+        width: 100%;
+        /*transform: translate(100%, 30px);*/
+        
+    }
+    .div2 p{
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+       
+    }
+    .div3 img{
+        width: 187%;
+        transform: translate(-60%, 850px);
+    }
+    .div4 p{
+
+        width: 100%;
+        transform: translate(1%, -65px);
+        padding-top: 10px;
+        
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+
+    /*nuestro equipo*/
+
+    .container{
+    margin-top: 50px;
+    align-items: center;
+    margin-left: -8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sonyalpha"
+      "sonyalphalink"
+      "lentesony50"
+      "lentesony50link"
+      "lentesony14"
+      "lentesony14link"
+      "lentecanon200"
+      "lentecanon200link";
+    }
+    .alphaimg{
+    
+        width: 100%;
+       
+    }
+    .sonyalphalink p{
+        width: 100%;
+    }
+
+    .lentesony50link p{
+        width: 100%;
+    }
+
+    .lentesony14link p{
+        width: 100%;
+    }
+
+    .lentecanon200link p{
+        width: 100%;
+    }
+   
+    .footerinicio{
+        height: 200px;
+        margin-top: 1000px;
+        
+    }
+    .footerinicio p{
+        transform: translate(10%, 100px);
+        display: inline-block;
+
+    }
+    .listasfooter{
+        transform: translateX(-400px);
+    }
+    .footerequipo{
+        height: 200px;
+        margin-top: 1000px;
+    }
+    .footerequipo p{
+        transform: translate(10%, 100px);
+        display: inline-block;
+    }
+    /*contacto*/
+
+    body{
+        width: 100%;
+    }
+    .imgprincipal2{
+       transform: translateX(-5%);
+    }
+    .contacto{
+       margin-right: 40%;
+
+    }
+    .footercontacto{
+        height: 200px;
+        margin-top: 1000px;
+    }
+    .footercontacto p{
+        transform: translate(10%, 100px);
+        display: inline-block;
+    }
+
+    /*blog*/
+
+    .blog{
+        height: 1100px;
+        
+    }
+    .blog__Parrafo{
+        font-size: 22px;
+    }
+    .blog__Parrafo2{
+        font-size: 22px;
+        padding-top: 120px;
+    }
+    .blog__Parrafo3{
+        font-size: 22px;
+    }
+    .footerblog{
+        height: 200px;
+        margin-top: 1000px;
+        
+    }
+    .footerblog p{
+        transform: translate(10%, 100px);
+        display: inline-block;
+    
+} 
+
+    /*galeria*/
+    .footergaleria{
+        height: 200px;
+        margin-top: 1000px;
+        
+    }
+    .footergaleria p{
+        transform: translate(10%, 100px);
+        display: inline-block;
+
+    }
+
+@media screen and (max-width: 730px){
+   
+    .footerinicio{
+        margin-top: 1200px;
+        height: 200px;
+        margin-bottom; 100px; 
+
+
+    }
+    .footerinicio ul{
+        display: inline-block;
+        align-items: center;
+
+    }
+
+    /*contacto*/
+    
+    .contacto{
+        margin-right: 20%;
+        width: 80%;
+        position: relative;
+        right: 15%;
+    }
+    .footercontacto{
+        margin-top: 800px;
+        height: 200px;
+        margin-bottom; 100px; 
+    }
+    .footercontacto ul{
+        display: inline-block;
+        align-items: center;
+    }
+
+    /*nuestro equipo*/
+
+    .footerequipo{
+        margin-top: 800px;
+        height: 200px;
+        margin-bottom; 100px; 
+    }
+    .footerequipo ul{
+        display: inline-block;
+        align-items: center;
+    }
+
+    /*blog*/
+
+    .blog{
+        height: 1200px;
+    }
+    .blog__Parrafo3{
+        padding-left: 200px;
+        padding-top: 170px;
+    }
+    .footerblog{
+        margin-top: 1200px;
+        height: 200px;
+        margin-bottom; 100px; 
+
+
+    }
+    .footerblog ul{
+        display: inline-block;
+        align-items: center;
+
+    }
+
+    /*galeria*/
+
+    .footergaleria{
+        margin-top: 800px;
+        height: 200px;
+        margin-bottom; 100px; 
+    }
+    .footergaleria ul{
+        display: inline-block;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 680px) { 
+
+
+
+    .lista__Menu{
+        padding-inline: 5px;
+    }
+   
+    .footerinicio p{
+    transform: translate(-100px, 70px);
+    display: inline-block;
+    margin-left: 0;
+    width: 130%;
+    }
+   .footerinicio a{
+       position: relative;
+       top: 30%;
+       right: 30%;
+   }
+
+   /*contacto*/
+
+   .footercontacto p{
+    transform: translate(-100px, 70px);
+    display: inline-block;
+    margin-left: 0;
+    width: 130%;
+   }
+   .footercontacto a{
+    position:relative;
+    top: 30%;
+    right: 30%;
+   }
+
+   /*nuestro equipo*/
+ 
+   .footerequipo p{
+    transform: translate(-100px, 70px);
+    display: inline-block;
+    margin-left: 0;
+    width: 130%;
+   }
+   .footerequipo a{
+    position:relative;
+    top: 30%;
+    right: 30%;
+   }
+
+   /*blog*/
+
+   .blog__Parrafo3{
+    padding-left: 80px;
+    width: 80%;
+    padding-top: 190px;
+    
+}
+.footerblog p{
+    transform: translate(-100px, 70px);
+    display: inline-block;
+    margin-left: 0;
+    width: 130%;
+    }
+.footerblog a{
+    position: relative;
+    top: 30%;
+    right: 30%;
+   }
+
+
+}
+
+    /*galeria*/
+
+.footergaleria p{
+    transform: translate(-100px, 70px);
+    display: inline-block;
+    margin-left: 0;
+    width: 130%;
+}
+.footergaleria a{
+    position: relative;
+    top: 30%;
+    right: 30%;
+}
+
+@media screen and (max-width: 540px) { 
+    body{
+        width: 100%;
+    }
+    .menu{
+    display: inline-block;
+    position: relative;
+    bottom: 100px;
+    left: 40%;
+
+    }
+    header{
+        height: 110px;
+        width: 100%;
+        margin-top: 9px;
+    }
+    .titulo{
+     position: absolute;
+     bottom: 70%;
+     width: 100%;
+    
+        
+    }
+    .logo{
+        margin-top: 30px;
+
+    }
+    .footerinicio p{
+        display: inline-block;
+    }
+
+    /*contacto*/
+
+    .contacto{
+        margin-right: 10%;
+        width: 90%;
+        position: relative;
+        right: 65px;
+    }
+
+    .contacto p{
+        position: relative;
+        bottom: 10px;
+    }
+    .footercontacto p{
+        display: inline-block;  
+    }
+
+    /*nuestro equipo*/
+
+    .footerequipo p{
+        display: inline-block;     
+    }
+    
+
+    /*blog*/
+
+    .blog{
+        height: 1300px;
+    }
+    .blog__Titulo{
+        padding-left: 40px;
+        display: inline-block;
+    }
+    .blog__Parrafo{
+        width: 80%;
+        padding-left: 13px;
+        color: #161616;
+        font-size: 22px;
+        
+    }
+    .blog__Parrafo2{
+        width: 70%;
+        padding-left: 60px;
+        color: #161616;
+        font-size: 22px;
+    }
+    .blog__Parrafo3{
+        padding-top: 180px;
+        padding-left: 28px;
+        width: 90%;
+        font-size: 22px;
+    }
+    .footerblog{
+        margin-top: 1700px;
+    }
+    .footerblog p{
+        display: inline-block;  
+    }
+
+    /*galeria*/
+
+    .footergaleria p{
+        display: inline-block;  
+    }
+}   
+
+@media screen and (max-width: 400px) { 
+    body{
+        width: 100%;
+    }
+
+    /*contacto*/
+
+    .contacto{
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        position: relative;
+        right: 20%;
+    }
+
+    .contacto p{
+        position: relative;
+        bottom: 10px;
+        width: 200px;
+    }
+
+ 
+
+   /* }   
+    .footerinicio{
+        margin-top: 1200px;
+    }
+    .listasfooter{
+        width: 100%;
+    }
+    .linksfooter{
+     
+    }
+  
+    .footerinicio p{
+        
+        color: #d7d7d7;
+        position: relative;
+        bottom: 130px;
+        right: 160px;
+        display:*/ 
+    }
+}   
