@@ -1,12 +1,17 @@
+/*animaciones*/
+
 
 html{
     font-family: 'Montserrat', sans-serif;
     background-color:#323232 ;
+    
 }
 body{
 *margin: 0;
    padding: 0;
    background-color: #323232;
+   
+   
 }
 
 .titulo{
@@ -24,7 +29,7 @@ body{
 header{
     position: sticky;
     top: 0px;
-    z-index: 20000;
+    z-index: 100;
     background-color: black;
     margin-left: -8px;
     margin-right: -8px;
@@ -55,7 +60,13 @@ header{
     color: #d7d7d7;
     text-decoration: none;
     font-size: 22px;
+    transition: all 300ms;
       
+}
+.links:hover{
+    transform: scale(1.09);
+    font-size: 23px;
+    padding-inline: 19px;
 }
 
 .logo{
@@ -64,7 +75,9 @@ header{
 }
 
 main{
-    height: 600px;
+    height: 900px;
+    padding-top: 50px;
+    z-index: 50;
 
 }
 
@@ -74,19 +87,22 @@ main{
     margin-bottom: -5%;
     margin-top: 5%;
     color: #0b0b0b;
-    padding: 15px;
-    text-align: center;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    position: relative;
+    left: 25%;
+    font-size: 40px;
+    
 }
 
 
 .texto__Parrafo{
     display: flex;
     flex-direction: column;
-    padding: ;
+    margin-top: 20px;
     justify-content: left;
     font-size: 20px;
     color: #d7d7d7
+    
     
     
 }
@@ -105,8 +121,10 @@ main{
    
 }
 .div2 p{
-    width: 60%;
+    width: 58%;
     padding-top: 17px;
+    position: absolute;
+    z-index: 3;
 }
 
 
@@ -127,20 +145,44 @@ main{
     justify-content: right;
     height: auto;
     width: 40%;
-    transform: translate(145%, -900px);
+    transform: translate(145%, -760px);
     border: inherit;
     margin-top: 40px;
 }
 
 .div4 p{
-    transform: translate(145%, -905px);
+    transform: translate(145%, -765px);
     width: 40%;
     text-align: center;
+   
+   
+    
+    
 }
-.div4:hover{
-    font-size: 16px;
-   color: #d7d7d7;
+.sec{
+    position: relative;
+    top: 100px;
+    right: 20px;
+    width: 102%;
+    margin: 0;
+    height: 1000px;
+    background: rgb(92,92,92);
+    background: linear-gradient(180deg, rgba(92,92,92,1) 0%, rgba(235,234,234,1) 89%);;
+    
 }
+.ola{
+    position: absolute;
+    top: 1000px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+   
+    
+
+    
+}
+
 
 a:hover{
     text-decoration: #d7d7d7;
@@ -166,7 +208,7 @@ a:hover{
 .footerinicio{
     padding: 20px 100px;
     background-color:black;
-    margin-top: 700px;
+    margin-top: 800px;
     height: 80px;
     margin-bottom: 100px;
 
@@ -298,6 +340,9 @@ a:hover{
       "lentesony14 lentesony14link"
       "lentecanon200 lentecanon200link"
       ". .";
+   
+      animation-duration: 3s;
+      animation-name: animacion;
   }
   
   .sonyalpha { grid-area: sonyalpha; }
@@ -319,12 +364,14 @@ a:hover{
 .alphaimg{
     width: 100%;
     height: 450px;
+  
 }
 
 .sonyalphalink h1{
     text-align: center;
     margin-top: 50px;
     color: #0b0b0b;
+  
 
 }
 .sonyalphalink p {
@@ -332,7 +379,8 @@ a:hover{
     font-size: 18px;
     text-align: center;
     width: 100%;
-    
+ 
+   
 }
 
 .sonyalphalink p a{
@@ -409,8 +457,6 @@ a:hover{
 
 
 
-
-
 /*contacto*/
 
 
@@ -418,17 +464,21 @@ a:hover{
 .imgprincipal2{
     width: 90%;
     height: 85%;
-    padding: 70px;
-        
+    transition: all 300ms;
+    position: relative;
+    left: 4%;
+    top: 70px;
 }
 
 .contacto{
     width: 55%;
     height: 33%;
-    transform: translateX(30%);
+    transform: translateX(22%);
     margin-left: 10%;
     margin-right: 10%;
     border: solid black;
+    position: relative;
+    top: 150px;
 }
 .contacto p{
     text-align: center;
@@ -441,9 +491,18 @@ a:hover{
 .contacto__Logo{
     position: relative;
     left: 76%;
-    bottom: 50%;
+    bottom: 30%;
     width: 60px;
+    transition: all 300ms;
 }
+.imgprincipal2:hover{
+    
+    transform: scale(1.05);
+    border: #d7d7d7 solid;
+  }
+  .contacto__Logo:hover{
+      transform: scale(1.15);
+  }
 
 /*blog*/
 
@@ -727,7 +786,7 @@ a:hover{
     .footerinicio{
         margin-top: 1200px;
         height: 200px;
-        margin-bottom; 100px; 
+        margin-bottom: 100px; 
 
 
     }
@@ -748,7 +807,7 @@ a:hover{
     .footercontacto{
         margin-top: 800px;
         height: 200px;
-        margin-bottom; 100px; 
+        margin-bottom: 100px; 
     }
     .footercontacto ul{
         display: inline-block;
@@ -760,7 +819,7 @@ a:hover{
     .footerequipo{
         margin-top: 800px;
         height: 200px;
-        margin-bottom; 100px; 
+        margin-bottom: 100px; 
     }
     .footerequipo ul{
         display: inline-block;
@@ -779,7 +838,7 @@ a:hover{
     .footerblog{
         margin-top: 1200px;
         height: 200px;
-        margin-bottom; 100px; 
+        margin-bottom: 100px; 
 
 
     }
@@ -794,7 +853,7 @@ a:hover{
     .footergaleria{
         margin-top: 800px;
         height: 200px;
-        margin-bottom; 100px; 
+        margin-bottom 100px; 
     }
     .footergaleria ul{
         display: inline-block;
@@ -917,6 +976,14 @@ a:hover{
     .footerinicio p{
         display: inline-block;
     }
+    .texto{
+        font-size: 35px;
+    }
+    .divtexto{
+        position: relative;
+        right: 14%;
+        padding-top: 40px;
+    }
 
     /*contacto*/
 
@@ -1004,6 +1071,14 @@ a:hover{
         bottom: 10px;
         width: 200px;
     }
+    .texto{
+        font-size: 32px;
+    }
+    .divtexto{
+        position: relative;
+        right: 18%;
+        padding-top: 40px;
+    }
 
  
 
@@ -1026,4 +1101,16 @@ a:hover{
         right: 160px;
         display:*/ 
     }
-}   
+} 
+
+/*animaciones*/
+@keyframes animacion {
+    from{
+        transform: scale(0.5) translateY(-40%);
+        filter: opacity(0.1);
+    to{
+        transform: scale(1);
+    }
+
+
+} 
