@@ -12,6 +12,7 @@ body{
    background-color: #323232;
    
    
+   
 }
 
 .titulo{
@@ -23,6 +24,7 @@ body{
     margin-right: -8px;
     position: absolute;
     bottom: 74%;
+    
     
 }
 
@@ -36,6 +38,7 @@ header{
     margin-top: 15px;
     height: 80px;
     padding: 0;
+    
 }
 
 
@@ -54,6 +57,7 @@ header{
     justify-content: space-around;
     padding-inline: 20px;
     margin-right: 20px;
+    
 }
 
 .links{
@@ -78,6 +82,8 @@ main{
     height: 900px;
     padding-top: 50px;
     z-index: 50;
+    animation-duration: 2s;
+    animation-name: animacion;
 
 }
 
@@ -91,9 +97,11 @@ main{
     position: relative;
     left: 25%;
     font-size: 40px;
+    animation-duration: 2s;
+    animation-name: animacion2;
+    
     
 }
-
 
 .texto__Parrafo{
     display: flex;
@@ -341,7 +349,7 @@ a:hover{
       "lentecanon200 lentecanon200link"
       ". .";
    
-      animation-duration: 3s;
+      animation-duration: 2s;
       animation-name: animacion;
   }
   
@@ -371,7 +379,8 @@ a:hover{
     text-align: center;
     margin-top: 50px;
     color: #0b0b0b;
-  
+    animation-name: animacion3;
+    animation-duration: 3s;
 
 }
 .sonyalphalink p {
@@ -379,6 +388,8 @@ a:hover{
     font-size: 18px;
     text-align: center;
     width: 100%;
+    animation-name: animacion4;
+    animation-duration: 3s;
  
    
 }
@@ -386,22 +397,30 @@ a:hover{
 .sonyalphalink p a{
     color: #d7d7d7;
     font-size: 18px;
+    animation-name: animacion4;
+    animation-duration: 3s;
 }
 
 .lentesony50link h1{
     text-align: center;
     color: #0b0b0b;
     margin-top: 70px;
+    animation-name: animacion3;
+    animation-duration: 1s;
 }
 .lentesony50link p{
     text-align: center;
     color: #d7d7d7;
     font-size: 18px;
     width: 100%;
+    animation-name: animacion4;
+    animation-duration: 3s;
 }
 .lentesony50link p a{
     color: #d7d7d7;
     font-size: 18px;
+    animation-name: animacion4;
+    animation-duration: 3s;
 }
 
 .lentesony50img{
@@ -510,9 +529,11 @@ a:hover{
     border: solid #d7d7d7 5px;
     height: 900px;
     background-image:url(../imagenes/IMG-20220315-WA0015.jpg);
+    opacity: 0.9;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 50px
+    
         
 }
 
@@ -523,6 +544,7 @@ a:hover{
     color: #161616;
     padding-bottom: 50px;
     
+    
 }
 .blog__Parrafo{
     display: inline-block;
@@ -531,7 +553,7 @@ a:hover{
     color: #d7d7d7;
     font-size: 20px;
     text-align: center;
-    opacity: 80%;
+    
 }
 .blog__Parrafo2{
     display: inline-block;
@@ -541,7 +563,7 @@ a:hover{
     font-size: 20px;
     text-align: center;
     padding-top: 100px;
-    opacity: 80%;
+    
     
   
 }
@@ -553,7 +575,7 @@ a:hover{
     font-size: 20px;
     text-align: center;
     padding-top: 150px;
-    opacity: 80%;
+    
 }
 
 /*galeria*/
@@ -573,7 +595,8 @@ a:hover{
   }
   
   .grid-item:hover {
-    filter: opacity(0.9);
+    filter: opacity(0.7);
+    transform: scale(1.02);
     
   }
   
@@ -1007,7 +1030,7 @@ a:hover{
     .footerequipo p{
         display: inline-block;     
     }
-    
+   
 
     /*blog*/
 
@@ -1101,16 +1124,53 @@ a:hover{
         right: 160px;
         display:*/ 
     }
-} 
+}
+@keyframes animacion4 {
+    from{
+      
+      color: #0b0b0b;  
+    }
+    to{
+        color: #d7d7d7;
+    }
+}
+/*animaciones*/
+@keyframes animacion3 {
+    from{
+        color: #d7d7d7;
+    }
+    to{
+        color: #0b0b0b;
+    }
+}
+/*animaciones*/ 
+@keyframes animacion2 {
+    from{
+        transform: translateX(100%);
+        filter: opacity(0.1);
+        color: #494848;
+    }
+    to{
+        transform: translateX(0%);
+        color: #0b0b0b;
+    }
+}
 
 /*animaciones*/
 @keyframes animacion {
     from{
-        transform: scale(0.5) translateY(-40%);
-        filter: opacity(0.1);
+        transform: scale(0.8) translateY(-20%);
+        filter: opacity(0.2);
     to{
         transform: scale(1);
+        
+        
     }
 
 
-} 
+} */
+
+
+
+
+
