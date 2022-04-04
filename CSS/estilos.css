@@ -115,6 +115,15 @@ header{
     animation-name: animacion5;
     animation-duration: 3s;
 }
+@keyframes animacion5 {
+    from{
+        filter: saturate(0);
+        
+    }
+    to{
+        filter: none;
+    }
+}
 
 .main2{
     height: 900px;
@@ -139,6 +148,17 @@ header{
     animation-name: animacion2;
     
     
+}
+@keyframes animacion2 {
+    from{
+        transform: translateX(-115%);
+        filter: opacity(0.7);
+        
+    }
+    to{
+        transform: translateX(0%);
+        
+    }
 }
 
 .texto__Parrafo{
@@ -391,8 +411,8 @@ a:hover{
 }
 /*nuestro equipo*/
 
-. { 
-    margin-top: 60px;
+/* .contenedora { 
+    /* margin-top: 60px;
     display: grid;
     grid-template-columns: 1.1fr 0.8fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -401,13 +421,13 @@ a:hover{
     grid-template-areas:
       "sonyalpha sonyalphalink"
       "lentesony50 lentesony50link"
-      "lentesony14 lentesony14link"
+      "lentesony14 lentesony14link" */
       "lentecanon200 lentecanon200link"
       ". .";
    
       animation-duration: 2s;
       animation-name: animacion;
-  }
+  } */
   
   .sonyalpha { grid-area: sonyalpha; }
   
@@ -699,9 +719,11 @@ a:hover{
         
 }
 .tarjeta{
-    position: relative;
-    top: 100px;
-    right: 50px;
+    position: absolute;
+    left: 2%;
+    top: 30%;
+    height: 500px;
+    width: 400px;
     padding-top: 30px;
     opacity: 92%;
     animation-name: animaciontar;
@@ -710,26 +732,66 @@ a:hover{
     
 
 }
+@keyframes animaciontar {
+    from{
+        transform: translateY(-65%);
+        filter: saturate(0);
+        opacity: 40%;
+    }
+    to{
+        transform: translateY(0%);
+        filter: saturate();
+        opacity: 92%;
+    }
+}
 .tarjeta2{
-    position: relative;
-    top: 400px;
+    position: absolute;
+    left: 68%;
+    height: 500px;
+    width: 400px;
+    
     padding-top: 30px; 
     opacity: 92%;
     animation-name: animaciontar2;
     animation-duration: 3s;
 }
+@keyframes animaciontar2 {
+    from{
+        transform: translateY(-135%);
+        filter: saturate(0);
+        opacity: 40%;
+    }
+    to{
+        transform: translateY(0%);
+        filter: saturate();
+        opacity: 92%;
+    }
+}
 .tarjeta3{
-    position: relative;
-    top: 200px;
-    right: 50px;
-    left: 50px;
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    height: 500px;
+    width: 400px;
     padding-top: 30px; 
     opacity: 92%;
     animation-name: animaciontar3;
     animation-duration: 2.5s;
 }
+@keyframes animaciontar3 {
+    from{
+        transform: translateY(-80%);
+        filter: saturate(0);
+        opacity: 40%;
+    }
+    to{
+        transform: translateY(0%);
+        filter: saturate();
+        opacity: 92%;
+    }
+}
 .blog{
-    margin-top: 700px;
+    margin-top: 1100px;
     height: 1000px;
     
 }
@@ -906,8 +968,170 @@ a:hover{
         grid-row: span 3;
     }
   }
+  @media screen and (max-width: 1250px){
+    .tarjeta3{
+        position: absolute;
+        top: 120%;
+        bottom: 0;
+        left: 10%;
+        right: 0;
+        
+    }
+    .tarjeta2{
+        position: absolute;
+        top: 80%;
+        bottom: 0;
+        left: 58%;
+        right: 0; 
+    }
+    
+    .blogtitulofondo{
+        position: relative;
+        left: 49%;
+    }
+    .blog__Titulo{
+        padding-left: 2%;
+    }
+.blogfondo{
+    position: absolute;
+    height: 1200px;
+}
+.blog{
+     margin-top: 150%;
+    display: flex;
+    flex-direction: column;
+}
+.contenedorblog img{
+    width: 60%;
+    height: 90%;
+}
+.parrafofondo{
+    height: 60%;
+    transform: translateY(5%);
+}
+.blog__Parrafo{
+    width: 95%;
+    padding-top: 8%;
+}
+.contenedorblog2 img{
+    width: 60%;
+    height: 90%;
+}
+.parrafofondo2{
+    height: 60%;
+    transform: translateY(5%);
+}
+.blog__Parrafo2{
+    width: 95%;
+    padding-top: 8%;
+}
+.contenedorblog3 img{
+    width: 60%;
+    height: 90%;
+}
+.parrafofondo3{
+  
+    height: 60%;
+    transform: translateY(5%);
+}
+.blog__Parrafo3{
+    width: 95%;
+    padding-top: 8%;
+}
 
+  }
 @media screen and (max-width: 1025px){
+        /*blog*/
+        .tarjeta3{
+            position: absolute;
+            top: 120%;
+            bottom: 0;
+            left: 10%;
+            right: 0;
+            
+        }
+        .tarjeta2{
+            position: absolute;
+            top: 80%;
+            bottom: 0;
+            left: 58%;
+            right: 0; 
+        }
+        
+        .blogtitulofondo{
+            position: relative;
+            left: 49%;
+        }
+        .blog__Titulo{
+            padding-left: 6%;
+        }
+   .blogfondo{
+       position: absolute;
+       height: 1200px;
+   }
+   .blog{
+    height: 2600px;
+       margin-top: 150%;
+       display: flex;
+       flex-direction: column;
+       
+   }
+   .contenedorblog img{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    left: 5%;
+    padding-bottom: 10%;
+   }
+   .parrafofondo{
+    width: 80%;
+    height: 40%;
+       transform: translateY(5%);
+       
+   }
+   .blog__Parrafo{
+       width: 95%;
+       padding-top: 8%;
+   }
+   .contenedorblog2 img{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    left: 5%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  .parrafofondo2{
+      width: 80%;
+      height: 30%;
+      transform: translateY(5%);
+      
+  }
+  .blog__Parrafo2{
+      width: 95%;
+
+      padding-top: 8%;
+  }
+  .contenedorblog3 img{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    left: 5%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    
+  }
+  .parrafofondo3{
+    width: 80%;
+    height: 30%;
+      transform: translateY(5%);
+     
+  }
+  .blog__Parrafo3{
+      width: 95%;
+      padding-top: 8%;
+  }
+
     /*inicio*/
     .main1{
         margin-bottom: 100px;
@@ -927,7 +1151,7 @@ a:hover{
     .ola{
         transform: translateY(30px);
     }
-
+    /*nuestro equipo*/
     .alphaimg{
         
         width: 100%;
@@ -1002,6 +1226,7 @@ a:hover{
         position: relative;
         bottom: 20px;
     }
+
 }
 
 @media screen and (max-width: 880px) { 
@@ -1110,10 +1335,26 @@ a:hover{
       "lentecanon200"
       "lentecanon200link";
     }
-    .alphaimg{
+    .ola2{
+        width: 20%;
+        position: absolute;
         
+    }
+    .ola3{
+        width: 19%;
+        height: 150%;
+        position: absolute;
+        left: 82.5%;
+        right: 0;
+    }
+    .alphaimg{
+        transform: translateY(-17%);
+        margin-top: 30px;
         width: 100%;
        
+    }
+    .lente14img{
+        transform: translateY(-5%);
     }
     .sonyalphalink p{
         width: 100%;
@@ -1129,6 +1370,22 @@ a:hover{
     }
 
     .lentecanon200link p{
+        width: 100%;
+    }
+    .sonyalphalink p{
+        width: 100%;
+        
+    }
+
+    .lentesony50link h1{
+        width: 100%;
+    }
+
+    .lentesony14link h1{
+        width: 100%;
+    }
+
+    .lentecanon200link h1{
         width: 100%;
     }
    
@@ -1184,7 +1441,29 @@ a:hover{
     }
 
     /*blog*/
-
+    .blogfondo{
+        position: absolute;
+        top: 15%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .tarjeta{
+        width: 40%;
+        height: 75%;
+    }
+    .tarjeta2{
+        width: 40%;
+        height: 75%;
+    }
+    .tarjeta3{
+        width: 40%;
+        height: 75%;
+    }
+    .blogtitulofondo{
+        transform: translateX(-13%);
+    }
     .blog{
         height: 1100px;
         
@@ -1222,6 +1501,58 @@ a:hover{
 
     }
 
+@media screen and (max-width: 769px){
+    .blog{
+        height: 2000px;
+        display: flex;
+        align-items: center;
+    }
+    .blogtitulofondo{
+        transform: translate(-40%, -70%);
+        width: 50%;
+    }
+    .blog__Titulo{
+        width: 100%;
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    .contenedorblog img{
+        width: 100%;
+        height: 100%;
+        transform: translateX(-5%);
+        
+    }
+    .contenedorblog2 img{
+        width: 100%;
+        height: 100%;
+        transform: translateX(-5%);
+    }
+    .contenedorblog3 img{
+        width: 100%;
+        height: 100%;
+        transform: translateX(-5%);
+    }
+    .contenedorblog3{
+        transform: translateY(-8%);
+    }
+    .parrafofondo{
+        height: 40%;
+        width: 80%;
+    }
+    .parrafofondo2{
+        padding-top: 0;
+        height: 30%;
+        width: 80%;
+    }
+    .blog__Parrafo2{
+        transform: translateY(-25%);
+    }
+    .parrafofondo3{
+        height: 40%;
+        width: 80%;
+    }
+
+}
 @media screen and (max-width: 730px){
    
     .footerinicio{
@@ -1268,7 +1599,7 @@ a:hover{
     }
 
     /*blog*/
-
+   
     .blog{
         height: 1200px;
     }
@@ -1353,10 +1684,22 @@ a:hover{
    /*blog*/
 
    .blog__Parrafo3{
-    padding-left: 80px;
-    width: 80%;
-    padding-top: 190px;
+       position: relative;
+       right: 37%;
+       bottom: 35%;
+    width: 140%;
+    font-size: 22px;
     
+}
+.blog__Parrafo{
+    font-size: 22px;
+}
+.blog__Parrafo2{
+    font-size: 22px;
+}
+.blog{
+    margin-top: 1200px;
+    height: 1800px;
 }
 .footerblog p{
     transform: translate(-100px, 70px);
@@ -1388,6 +1731,109 @@ a:hover{
 }
 
 @media screen and (max-width: 540px) { 
+      /*blog*/
+
+      .blog{
+        height: 2000px;
+        margin-top: 340%;
+    }
+    .blogfondo{
+        margin-top: 20%;
+    }
+    .blogtitulofondo{
+        transform: translate(-42%, -70%);
+        width: 53%;
+    }
+    .blog__Titulo{
+        width: 100%;
+        font-size: 20px;
+        padding-top: 5%;
+    }
+    .tarjeta{
+        transform: translateY(10%);
+        width: 45%;
+        animation-name: none
+        
+    }
+    .tarjeta2{
+        width: 45%;
+        position: absolute;
+        left: 2%;
+        top: 140%;
+        animation-name: none;
+    }
+    .tarjeta3{
+        width: 45%;
+        position: absolute;
+        left: 52%;
+        top: 80%;
+        animation-name: none;
+    }
+    .contenedorblog img{
+        position: relative;
+        right: 15%;
+        transform: translateX(-5%);
+        width: 100%;
+        height: 80%;
+
+    }
+    .contenedorblog2 img{
+        position: relative;
+        right: 15%;
+        transform: translateX(-5%);
+        width: 100%;
+        height: 80%;
+    }
+    .contenedorblog3 img{
+        position: relative;
+        right: 15%;
+        transform: translateX(-5%);
+        width: 100%;
+        height: 70%;
+    }
+    .contenedorblog3{
+        transform: translateY(-8%);
+    }
+   
+    .blog__Parrafo2{
+        transform: translateY(-25%);
+    }
+    .parrafofondo3{
+        height: 35%;
+        width: 120%;
+    }
+    .blog__Parrafo3{
+        width: 140%;
+        font-size: 20px;
+        position: relative;
+        bottom: 58%;
+        right: 40%;
+
+    }
+    .parrafofondo2{
+        height: 40%;
+        width: 120%;
+    }
+    .blog__Parrafo2{
+        width: 120%;
+        font-size: 20px;
+        position: relative;
+        bottom: 2%;
+        right: 12%;
+
+    }
+    .parrafofondo{
+        height: 45%;
+        width: 120%;
+    }
+    .blog__Parrafo{
+        width: 120%;
+        font-size: 20px;
+        position: relative;
+        bottom: 2%;
+        right: 10%;
+
+    }
     body{
         width: 100%;
     }
@@ -1507,10 +1953,61 @@ a:hover{
     }
     .ola3{
         width: 20%;
-        transform: translateY(-780px);
+        position: absolute;
+        left: 83.7%;
+        right: 0;
+        top: -1.1%;
+        bottom: 0;
     }
     .ola2{
         width: 20%;
+    }
+
+    .sonyalphalink p{
+        width: 110%;
+        position: relative;
+        left: 1%;
+    }
+
+    .lentesony50link p{
+        width: 110%;
+        position: relative;
+        right: 10%;
+    }
+
+    .lentesony14link p{
+        width: 110%;
+        position: relative;
+        right: 8%;
+    }
+
+    .lentecanon200link p{
+        width: 110%;
+        position: relative;
+        right: 8%;
+    }
+    .sonyalphalink h1{
+        width: 110%;
+        position: relative;
+        left: 1%;
+    }
+
+    .lentesony50link h1{
+        width: 110%;
+        position: relative;
+        right: 10%;
+    }
+
+    .lentesony14link h1{
+        width: 110%;
+        position: relative;
+        right: 8%;
+    }
+
+    .lentecanon200link h1{
+        width: 110%;
+        position: relative;
+        right: 8%;
     }
    
     .gridequipo{
@@ -1526,7 +2023,24 @@ a:hover{
     }
     .alphaimg{
         height: 100%;
+        position: relative;
+        right: 3.5%;
     }
+    .lentesony50img{
+        height: 100%;
+        position: relative;
+        right: 3.5%;
+    }
+    .lente14img{
+        height: 100%;
+        position: relative;
+        right: 3.5%;
+    }
+    .lente200img{
+        height: 100%;
+        position: relative;
+        right: 3.5%;
+    }  
     .sonyalpha{
         transform: translateY(-32%);
     }
@@ -1538,40 +2052,7 @@ a:hover{
     }
    
 
-    /*blog*/
-
-    .blog{
-        height: 1300px;
-    }
-    .blog__Titulo{
-        padding-left: 40px;
-        display: inline-block;
-    }
-    .blog__Parrafo{
-        width: 80%;
-        padding-left: 13px;
-        color: #161616;
-        font-size: 22px;
-        
-    }
-    .blog__Parrafo2{
-        width: 70%;
-        padding-left: 60px;
-        color: #161616;
-        font-size: 22px;
-    }
-    .blog__Parrafo3{
-        padding-top: 180px;
-        padding-left: 28px;
-        width: 90%;
-        font-size: 22px;
-    }
-    .footerblog{
-        margin-top: 1700px;
-    }
-    .footerblog p{
-        display: inline-block;  
-    }
+  
 
     /*galeria*/
 
@@ -1603,11 +2084,16 @@ a:hover{
         margin-left: 0;
         width: 100%;
         position: relative;
-        right: 20%;
+        
+    }
+    .contacto h2{
+        position: relative;
+        left: 30px;
     }
 
     .contacto p{
         position: relative;
+        left: 67px;
         bottom: 10px;
         width: 200px;
     }
@@ -1618,6 +2104,58 @@ a:hover{
         position: relative;
         right: 18%;
         padding-top: 40px;
+    }
+    .blogfondo{
+        position: absolute;
+        top: 17%;
+    }
+    .contenedorblog img{
+        height: 90%;
+        width: 130%;
+        transform: translateX(-10%);
+    }
+    .contenedorblog2 img{
+        height: 85%;
+        width: 130%;
+        transform: translateX(-10%);
+    }
+    .contenedorblog3 img{
+        height: 70%;
+        width: 100%;
+        transform: translateX(-1%);
+    }
+    .parrafofondo{
+        transform: translateX(6%);
+    }
+    .parrafofondo2{
+        transform: translateX(6%);
+    }
+    .parrafofondo3{
+        transform: translateX(6%);
+        width: 90%;
+    }
+    .blog__Parrafo{
+        font-size: 17px;
+        width: 130%;
+        position: relative;
+        right: 12%;
+    }
+    .blog__Parrafo2{
+        font-size: 17px;
+        width: 140%;
+        position: relative;
+        right: 17%;
+        bottom: 2%;
+    }
+    .blog__Parrafo3{
+        font-size: 17px;
+        width: 150%;
+        position: relative;
+        right: 50%;
+        bottom: 55%;
+    }
+    .divicion{
+        width: 140%;
     }
 
  
@@ -1654,15 +2192,7 @@ a:hover{
     }
 }
 /*animaciones*/
-@keyframes animacion5 {
-    from{
-        filter: saturate(0);
-        
-    }
-    to{
-        filter: none;
-    }
-}
+
 /*animaciones*/
 @keyframes animacion4 {
     from{
@@ -1675,59 +2205,16 @@ a:hover{
     }
 }
 /*animaciones*/
-@keyframes animaciontar3 {
-    from{
-        transform: translateY(-80%);
-        filter: saturate(0);
-        opacity: 40%;
-    }
-    to{
-        transform: translateY(0%);
-        filter: saturate();
-        opacity: 92%;
-    }
-}
-/*animaciones*/
-@keyframes animaciontar2 {
-    from{
-        transform: translateY(-135%);
-        filter: saturate(0);
-        opacity: 40%;
-    }
-    to{
-        transform: translateY(0%);
-        filter: saturate();
-        opacity: 92%;
-    }
-}
-/*animaciones*/
-@keyframes animaciontar {
-    from{
-        transform: translateY(-65%);
-        filter: saturate(0);
-        opacity: 40%;
-    }
-    to{
-        transform: translateY(0%);
-        filter: saturate();
-        opacity: 92%;
-    }
-}
-/*animaciones*/ 
-@keyframes animacion2 {
-    from{
-        transform: translateX(-115%);
-        filter: opacity(0.7);
-        
-    }
-    to{
-        transform: translateX(0%);
-        
-    }
-}
 
 /*animaciones*/
-/*@keyframes animacion {
+
+/*animaciones*/
+
+/*animaciones*/ 
+
+
+/*animaciones*/
+@keyframes animacion {
     from{
         transform: scale(0.8) translateY(-20%);
         filter: opacity(0.2);
@@ -1738,8 +2225,10 @@ a:hover{
     }
 
 
-} */
+}
+@media (max-width: 450px) and (min-width: 100px){
 
+}
 
 
 
