@@ -1040,7 +1040,7 @@ a:hover{
        height: 1200px;
    }
    .blog{
-    height: 2600px;
+    height: 3000px;
        margin-top: 150%;
        display: flex;
        flex-direction: column;
@@ -1419,6 +1419,11 @@ a:hover{
         right: 0;
         width: 100%;
     }
+      .parrafofondo2{
+          position: relative;
+          top: 50px;
+
+    }
     .tarjeta{
         width: 40%;
         height: 75%;
@@ -1435,7 +1440,7 @@ a:hover{
         transform: translateX(-13%);
     }
     .blog{
-        height: 1100px;
+        height: 1900px;
         
     }
     .blog__Parrafo{
@@ -1443,7 +1448,7 @@ a:hover{
     }
     .blog__Parrafo2{
         font-size: 22px;
-        padding-top: 120px;
+        padding-top: 50px;
     }
     .blog__Parrafo3{
         font-size: 22px;
@@ -1473,7 +1478,7 @@ a:hover{
 
 @media screen and (max-width: 769px){
     .blog{
-        height: 2000px;
+        height: 2500px;
         display: flex;
         align-items: center;
     }
@@ -1510,13 +1515,12 @@ a:hover{
         width: 80%;
     }
     .parrafofondo2{
+        transform: translateY(-40px);
         padding-top: 0;
         height: 30%;
         width: 80%;
     }
-    .blog__Parrafo2{
-        transform: translateY(-25%);
-    }
+    
     .parrafofondo3{
         height: 40%;
         width: 80%;
@@ -1666,6 +1670,8 @@ a:hover{
 }
 .blog__Parrafo2{
     font-size: 22px;
+    width: 100%;
+    padding-right: 50px;
 }
 .blog{
     margin-top: 1200px;
@@ -1780,7 +1786,7 @@ a:hover{
         width: 140%;
         font-size: 20px;
         position: relative;
-        bottom: 58%;
+        bottom: 50%;
         right: 40%;
 
     }
@@ -1792,7 +1798,7 @@ a:hover{
         width: 120%;
         font-size: 20px;
         position: relative;
-        bottom: 2%;
+        top: 16%;
         right: 12%;
 
     }
@@ -1923,10 +1929,13 @@ a:hover{
 
     /*nuestro equipo*/
     body{
+        width: auto;
         margin: 0;
         padding: 0;
     }
     .ola3{
+        margin: 0;
+        padding: 0;
         width: 20%;
         position: absolute;
         left: 83.7%;
