@@ -1,0 +1,39 @@
+$colorsecundario: #d7d7d7;
+$colorprincipal: #0b0b0bee;
+
+$estilos: (
+    centro: center,
+    tamaño: 1.4rem,
+    color: $colorsecundario,
+    opacidad: 0.5,
+    decoracion: overline,
+    borde: 0 0 30px 30px,
+    
+
+);
+.h2con{
+    border-radius: map-get($estilos, borde);
+    background-color: map-get($estilos, color);
+    opacity: map-get($estilos, opacidad);
+    height: 70px;
+    width: 400px;
+    padding-top: 100px;
+    position: absolute;
+    
+    top: 22%;
+    left: 35%;
+    margin: auto;
+
+    h2 {
+        color: #0b0b0bee;
+        text-align: map-get($estilos, centro);
+        font-size: map-get($estilos, tamaño);
+        
+        width: 90%;
+        padding-left: 28px;
+        position: relative;
+        bottom: 70px;
+        
+        
+    }
+}
