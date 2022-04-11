@@ -1,0 +1,122 @@
+.footer {
+  -webkit-box-shadow: 0px -70px 100px 23px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -70px 100px 23px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -70px 100px 23px rgba(0, 0, 0, 0.75); }
+
+.ir {
+  width: 200px;
+  height: 30px;
+  background-color: #0b0b0bee;
+  opacity: 70%;
+  border-radius: 30px;
+  position: absolute;
+  left: 60%;
+  bottom: 0.7%; }
+  .ir a {
+    font-size: 20px;
+    margin: auto;
+    padding-left: 28%;
+    bottom: 2%;
+    text-decoration: none;
+    color: #d7d7d7;
+    width: 90%;
+    opacity: none; }
+
+.footer a {
+  font-size: 20px;
+  margin: auto;
+  padding-left: 28%;
+  text-decoration: none;
+  color: #d7d7d7;
+  width: 90%;
+  opacity: none; }
+
+.footer-blog {
+  transform: translateY(300%); }
+
+@media screen and (max-width: 1000px) {
+  .img-3 {
+    display: none; }
+  .img-4 {
+    display: none; }
+  .img-5 {
+    display: none; }
+  .footer {
+    width: 100%;
+    margin-top: 250px;
+    border-radius: 10px; }
+  .contenedor-footer {
+    width: auto;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .footer-copyright {
+    transform: translateX(-30%);
+    color: #727272; } }
+
+@media screen and (max-width: 520px) {
+  .ir {
+    width: 10px;
+    background-color: transparent; }
+    .ir a {
+      color: #0b0b0bee;
+      opacity: 100%; } }
+
+* {
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+.slider-frame {
+  width: 100%;
+  height: auto;
+  margin: 20px auto 0;
+  overflow: hidden; }
+  .slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out; }
+    .slider-frame ul li {
+      width: 100%;
+      list-style: none; }
+
+.slider-frame img {
+  width: 100%; }
+
+@keyframes slide {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+
+.h2con {
+  border-radius: 0 0 30px 30px;
+  background-color: #d7d7d7;
+  opacity: 0.5;
+  height: 70px;
+  width: 400px;
+  padding-top: 100px;
+  position: absolute;
+  top: 22%;
+  left: 35%;
+  margin: auto; }
+  .h2con h2 {
+    color: #0b0b0bee;
+    text-align: center;
+    font-size: 1.4rem;
+    width: 90%;
+    padding-left: 28px;
+    position: relative;
+    bottom: 70px; }
