@@ -1,0 +1,68 @@
+.contenedorblog{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 100%; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 100px; 
+    grid-template-areas: 
+      "parrafoblog"
+      "parrafoblog2"
+      "parrafoblog3"; 
+
+
+
+    .parrafoblog{
+        background-color: rgba(0, 0, 0, 0.562);
+        border-radius: 30px;
+        width: auto;
+        height: 270px;
+        -webkit-box-shadow: 0px 0px 100px 20px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 100px 20px rgba(0,0,0,1);
+        box-shadow: 0px 0px 100px 20px rgba(0,0,0,1);
+        opacity: 90%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            width: 90%;
+            padding: 50px;
+            color: #d7d7d7;
+            font-size: 20px;
+            text-align: center;
+        }
+      }
+      .parrafoblog2{
+
+          @extend .parrafoblog;
+        p{
+            width: 90%;
+            padding: 50px;
+            color: #d7d7d7;
+            font-size: 20px;
+            text-align: center;
+        }
+      }
+      .parrafoblog3{
+          @extend .parrafoblog;
+        p{
+            width: 90%;
+            padding: 50px;
+            color: #d7d7d7;
+            font-size: 20px;
+            text-align: center;
+        }
+      }    
+  }
+
+.blogimg2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    img{
+        width: 70%;
+    }
+}

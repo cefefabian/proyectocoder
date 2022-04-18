@@ -1,0 +1,141 @@
+.premio{
+    border-radius: 40px 40px 0 0;
+    background-color: white;
+    
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 75%;
+    margin: auto;
+    margin-top: 23%;
+    
+    h3{
+  
+       padding-top: 8px;
+    } 
+
+    
+}
+.imgcon{
+    margin: 0 auto;
+    width: 75%;
+    height: 100%;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-auto-flow: dense;
+    gap: 20px 20px; 
+    
+    
+    grid-template-areas: 
+      "img01 img02"
+      "img03 img04"; 
+
+     
+        .img01{
+            background-image: url(../imagenes/galeria/img14.jpg);
+            background-size: cover;
+            width: 100%;
+            
+            padding: 20px;
+            grid-area: img01;
+      }
+      .img02{
+          background-image: url(https://i.blogs.es/aa8bbb/nature-ttl-photographer-of-the-year-2021-overall-winner/840_560.jpg);
+          background-size: cover;
+          width: 100%;
+          
+          
+          display: grid;
+          grid-area: img02;
+      }
+      .img03{
+          background-image: url(https://i.blogs.es/a589aa/6317_8_21447_luistato_spain_professional_wildlifenature_2021/840_560.jpg);
+          background-size: cover;
+          display: grid;
+          grid-area: img03;
+          
+      }
+      .img04{
+          background-image: url(https://i.blogs.es/30b441/sony-world-awards-2021-ganadores-nacionales-mireia-vilaplana/840_560.jpg);
+          background-size: cover;
+          display: grid;
+          grid-area: img04;
+          width: 100%;
+          
+      }
+
+}
+.div4{
+    margin: 0 auto;
+}
+.conimg{
+    
+    flex-direction: column;
+    
+    height: 700px;
+    
+    
+
+}
+@media screen and (max-width: 990px){
+    .imgcon{
+        
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img01"
+        "img02"
+        "img03"
+        "img04";
+        height: 100%;
+    }
+    .conimg{
+        height: 1700px;
+        width: 100%;
+        
+        
+    }
+}
+@media screen and (max-width: 880px){
+    .premio{
+        height: 90px;
+        text-align: center;
+        width: 84%;
+        margin: auto;
+        margin-top: 20%;
+    }
+    .imgcon{
+        height: 90%;
+        width: 84%;
+    }
+}
+@media screen and (max-width: 680px){
+    .premio{
+        width: 95%;
+        margin: auto;
+    }
+    
+    .imgcon{
+        width: 95%;
+        
+    }
+}
+@media screen and (max-width: 550px){
+    .imgcon{
+        height: 75%;
+    }
+}
+@media screen and (max-width: 420px){
+    .premio{
+        width: 100%;
+        margin: auto;
+        margin-top: 20%;
+    }
+    .imgcon{
+        width: 100%;
+        height: 65%;
+        
+    }
+}
