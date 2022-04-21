@@ -54,15 +54,54 @@
             font-size: 20px;
             text-align: center;
         }
-      }    
+      }     
   }
+  .parrafoblog4{
+    @extend .parrafoblog;
+    
+  p{
+      width: 90%;
+      padding: 50px;
+      color: #d7d7d7;
+      font-size: 20px;
+      text-align: center;
+  }
+}
 
 .blogimg2{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 500px;
     img{
         width: 70%;
     }
+}
+@media screen and (max-width: 540px){
+  .contenedorblog{
+    width: 98%;
+     .parrafoblog{
+       p{
+         padding: 0;
+       }
+     }
+    
+  }
+}
+@media screen and (max-width: 769px){
+  .blogimg2{
+    margin: 0 auto;
+    margin-top: 0;
+    img{
+      width: 98%;
+    }
+  }
+}
+@media screen and (max-width: 840px){
+  .contenedorblog{
+    margin-top: 200px;
+  }
+  .blogimg2{
+    margin-top: 650px;
+  }
 }
