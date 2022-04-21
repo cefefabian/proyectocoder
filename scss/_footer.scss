@@ -9,6 +9,7 @@
 }
 .footer-inicio{
     margin-top: 300px;
+
 }
 
 @mixin nombre($color , $alto , $ancho , $colorfondo) {
@@ -100,6 +101,11 @@
     .footer-copyright{
         transform: translateX(-30%);
         color: #727272;
+    }
+}
+@media screen and (max-width: 769px){
+    .footer-contacto{
+        margin-top: 570px;
     }
 }
 @media screen and (max-width: 520px){
