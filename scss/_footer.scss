@@ -109,10 +109,16 @@
         transform: translateX(-30%);
         color: #727272;
     }
+    .footer-blog{
+        margin-top: 500px;
+    }
 }
 @media screen and (max-width: 769px){
     .footer-contacto{
         margin-top: 570px;
+    }
+    .footer-blog{
+        margin-top: 700px;
     }
 }
 @media screen and (max-width: 520px){
