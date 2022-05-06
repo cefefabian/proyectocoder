@@ -6,16 +6,19 @@
 .footer-inicio {
   margin-top: 300px; }
 
+.footer-galeria {
+  margin-top: 200px; }
+
 .ir {
   color: none;
   height: 30px;
   width: 200px;
   background-color: #0b0b0bd0;
   opacity: 70%;
-  border-radius: 30px;
-  position: absolute;
-  left: 60%;
-  bottom: 0.7%; }
+  border-radius: 10px;
+  position: relative;
+  left: 70%;
+  bottom: 10px; }
   .ir a {
     font-size: 20px;
     transition: all 250ms;
@@ -25,7 +28,8 @@
     text-decoration: none;
     color: #d7d7d7;
     width: 90%;
-    opacity: none; }
+    opacity: none;
+    font-style: italic; }
 
 .footer a {
   font-size: 20px;
@@ -37,7 +41,11 @@
   opacity: none; }
 
 .footer-blog {
-  transform: translateY(100%); }
+  transform: translateY(100%);
+  margin-top: 1200px; }
+
+.img-fluid {
+  border-radius: 10px; }
 
 .ir a:hover {
   text-decoration: #d7d7d7;
@@ -51,7 +59,7 @@
   text-decoration: #d7d7d7;
   color: #35392d;
   transform: scale(1.09);
-  font-size: i 0.5rem; }
+  font-size: 0.5rem; }
 
 @media screen and (max-width: 1000px) {
   .img-3 {
@@ -71,11 +79,15 @@
     margin-right: auto; }
   .footer-copyright {
     transform: translateX(-30%);
-    color: #727272; } }
+    color: #727272; }
+  .footer-blog {
+    margin-top: 500px; } }
 
 @media screen and (max-width: 769px) {
   .footer-contacto {
-    margin-top: 570px; } }
+    margin-top: 570px; }
+  .footer-blog {
+    margin-top: 700px; } }
 
 @media screen and (max-width: 520px) {
   .ir {
@@ -85,7 +97,9 @@
       color: #0b0b0bee;
       opacity: 100%; }
   .footer-inicio {
-    margin-top: -50px; } }
+    margin-top: -50px; }
+  .footer-blog {
+    margin-top: 500px; } }
 
 * {
   padding: 0;
@@ -167,13 +181,13 @@
     bottom: 70px; }
 
 .imagen, .imagen2, .imagen3 {
-  background-image: url(../imagenes/galeria/img14.jpg);
+  background-image: url(../imagenes/galeria/a3.jpg);
   background-size: cover;
   height: 300px;
   border: #d7d7d7a4 solid 2px; }
 
 .imagen2 {
-  background-image: url(../imagenes/galeria/img14.jpg); }
+  background-image: url(../imagenes/galeria/img17.jpg); }
 
 .imagen3 {
   background-image: url(../imagenes/galeria/img14.jpg);
@@ -181,7 +195,7 @@
   border-radius: 0 0 15px 15px; }
 
 .slider-frame {
-  padding-top: 20px; }
+  padding-top: 30px; }
   .slider-frame ul {
     margin-bottom: 0; }
 
@@ -215,16 +229,39 @@
       font-size: medium; } }
 
 .premio {
-  border-radius: 40px 40px 0 0;
+  border-radius: 10px 10px 0 0;
   background-color: white;
+  -webkit-box-shadow: 0px -10px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -10px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -10px 22px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: center;
   height: 50px;
-  width: 75%;
+  width: 80%;
   margin: auto;
   margin-top: 23%; }
   .premio h3 {
     padding-top: 8px; }
+
+.barra1 {
+  height: 700px;
+  width: 2.5%;
+  background-color: white;
+  position: absolute;
+  left: 10%; }
+
+.barra2 {
+  height: 700px;
+  width: 2.5%;
+  background-color: white;
+  position: absolute;
+  right: 10%; }
+
+.barra3 {
+  height: 80px;
+  width: 80%;
+  background-color: white;
+  margin: 0 auto; }
 
 .imgcon {
   margin: 0 auto;
@@ -238,24 +275,24 @@
   gap: 20px 20px;
   grid-template-areas: "img01 img02" "img03 img04"; }
   .imgcon .img01 {
-    background-image: url(../imagenes/galeria/img14.jpg);
+    background-image: url(../imagenes/galeria/premio.jpg);
     background-size: cover;
     width: 100%;
     padding: 20px;
     grid-area: img01; }
   .imgcon .img02 {
-    background-image: url(https://i.blogs.es/aa8bbb/nature-ttl-photographer-of-the-year-2021-overall-winner/840_560.jpg);
+    background-image: url(../imagenes/galeria/premio1.jpg);
     background-size: cover;
     width: 100%;
     display: grid;
     grid-area: img02; }
   .imgcon .img03 {
-    background-image: url(https://i.blogs.es/a589aa/6317_8_21447_luistato_spain_professional_wildlifenature_2021/840_560.jpg);
+    background-image: url(../imagenes/galeria/premio3.jpg);
     background-size: cover;
     display: grid;
     grid-area: img03; }
   .imgcon .img04 {
-    background-image: url(https://i.blogs.es/30b441/sony-world-awards-2021-ganadores-nacionales-mireia-vilaplana/840_560.jpg);
+    background-image: url(../imagenes/galeria/premios2.jpg);
     background-size: cover;
     display: grid;
     grid-area: img04;
@@ -276,23 +313,43 @@
     height: 100%; }
   .conimg {
     height: 1700px;
-    width: 100%; } }
+    width: 100%; }
+  .barra1 {
+    height: 1700px; }
+  .barra2 {
+    height: 1700px; } }
 
 @media screen and (max-width: 880px) {
   .premio {
     height: 90px;
     text-align: center;
-    width: 84%;
+    width: 90%;
     margin: auto;
     margin-top: 20%; }
   .imgcon {
     height: 90%;
-    width: 84%; } }
+    width: 84%; }
+  .barra1 {
+    width: 3%;
+    left: 6.2%;
+    height: 1530px; }
+  .barra2 {
+    width: 3%;
+    right: 6.2%;
+    height: 1530px; }
+  .barra3 {
+    width: 90%; } }
 
 @media screen and (max-width: 680px) {
   .premio {
     width: 95%;
     margin: auto; }
+  .barra1 {
+    display: none; }
+  .barra2 {
+    display: none; }
+  .barra3 {
+    display: none; }
   .imgcon {
     width: 95%; } }
 
@@ -361,7 +418,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 500px; }
+  margin-top: 1500px; }
   .blogimg2 img {
     width: 70%; }
 
@@ -373,8 +430,7 @@
 
 @media screen and (max-width: 769px) {
   .blogimg2 {
-    margin: 0 auto;
-    margin-top: 0; }
+    margin: 0 auto; }
     .blogimg2 img {
       width: 98%; } }
 
