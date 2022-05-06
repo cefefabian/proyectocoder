@@ -72,11 +72,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 500px;
+    margin-top: 1500px;
     img{
         width: 70%;
     }
 }
+
 @media screen and (max-width: 540px){
   .contenedorblog{
     width: 98%;
@@ -91,7 +92,7 @@
 @media screen and (max-width: 769px){
   .blogimg2{
     margin: 0 auto;
-    margin-top: 0;
+
     img{
       width: 98%;
     }
